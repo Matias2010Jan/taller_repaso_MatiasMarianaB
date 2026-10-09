@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiencia Trusistica espectacular</title>
-    <link rel="stylesheet" href="taller_repaso_MatiasMarianaB/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- CABECERA: Contiene logo y menú -->
@@ -15,15 +15,29 @@
             <a href="#Servicios">Servicios</a>
             <a href="#contacto">Contacto</a>
         </nav>
+
+        <div class="controles-usuario">
+            <button id="btn-toggle-tema" class="btn-tema">🌙 Cambiar Tema</button>
+        </div>
+
     </header>
     <!-- CONTENIDO PRINCIPAL -->
     <main>
         <!-- SECCIÓN 1: Hero (La portada de impacto) -->
         <section id="inicio" class="hero">
             <div class="hero-content">
+
                 <h1>Disfruta de una experiencia inolvidable</h1>
+
+                <h1>Bienvenido a mi Portafolio</h1>
+
+                <!-- Contenedor vacío donde JS inyectará el saludo según la hora -->
+                 <p id="saludo-tiempo-real" class="texto-resaltado"></p>
+
                 <p>Nos esforzamos al maximo para que disfrutes tu dia</p>
+
                 <button class="btn-primary">Mas información</button>
+                
             </div>
         </section>
         <!-- SECCIÓN 2: Servicios (Uso de Grid) -->
@@ -31,23 +45,24 @@
             <h2>Nuestros Servicios</h2>
             <div class="grid-servicios">
                 <article class="card">
-                    <img src="taller_repaso_MatiasMarianaB/img/servicio-1.jpg" alt="Caminata">
+                    <img src="img/servicio-1.jpg" alt="Caminata">
                     <h3>Caminata al aire libre</h3>
                     <p>conecta con la naturaleza, respira aire puro y descubre paisajes increibles en casa paso.</p>
                 </article>
                 <article class="card">
-                    <img src="taller_repaso_MatiasMarianaB/img/servicio-2.jpg" alt="Picnic">
+                    <img src="img/servicio-2.jpg" alt="Picnic">
                     <h3>Picnic</h3>
                     <p>un dia al aire libre rodeados de buena compañia, comida deliciosa y momentos inolvidables.</p>
                 </article>
                 <article class="card">
-                    <img src="taller_repaso_MatiasMarianaB/img/servicio-3.jpg" alt="Fotografía">
+                    <img src="img/servicio-3.jpg" alt="Fotografía">
                     <h3>Servico de fotografia</h3>
                     <p>Capturamos los mejores momentos espontaneos de tu caminata o picnic sin que tengas que preocuparte por sacar el celular.</p>
                 </article>
             </div>
         </section>
     </main>
+    <!-- Esta línea debe ser la última antes del </body> --> <script src="js/app.js" defer></script>
     
 </body>
 </html>
